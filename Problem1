@@ -23,3 +23,16 @@ Constraints
 -	Each element of sequence is between 1 and 1000, inclusive.
 
 *******/
+
+#include <iostream>
+ 
+using namespace std;
+ 
+class ZigZag {
+  public:
+  int longestZigZag(int[] sequence) 
+  {
+    
+  }
+};
+ 
