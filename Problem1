@@ -24,15 +24,15 @@ Constraints
 
 *******/
 
-#include <iostream>
- 
-using namespace std;
- 
-class ZigZag {
-  public:
-  int longestZigZag(int[] sequence) 
-  {
-    
-  }
-};
+public static int longestZigZag(int[] sequence) {
+    int max_seq = 0;
+
+    if (sequence.length == 1) {
+        return 1;
+    }
+
+    if (sequence.length == 2) {
+        return 2;
+    }
+}
  
