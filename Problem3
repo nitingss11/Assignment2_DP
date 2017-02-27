@@ -43,3 +43,22 @@ any number from an interval [0,U], where U is some upper bound (1 ≤ U ≤ 106)
 using namespace std;
 int n, t, temp;
 vector <int> v;
+
+int lis(vector<int> v, int n, int l)
+{
+   	vector<int> var;
+	for(int i=l; i<l+n; i++)
+	{
+		int num=v[i];
+		vector<int> :: iterator it;
+		it=lower_bound(var.begin(),var.end(),num);
+		if(it==var.end())
+		 	var.push_back(num);
+		else
+			*it=num;
+	}
+	int temp=var.size();
+	var.clear();
+    return temp;
+ 
+}
