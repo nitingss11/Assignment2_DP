@@ -1,4 +1,6 @@
 /*******
+PROBLEM STATEMENT
+
 In the city, roads are arranged in a grid pattern. Each point on the grid represents a corner where two blocks meet. 
 The points are connected by line segments which represent the various street blocks. 
 Using the cartesian coordinate system, we can assign a pair of integers to each corner as shown below. 
