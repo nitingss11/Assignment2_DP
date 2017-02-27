@@ -24,7 +24,8 @@ Constraints
 
 *******/
 
-import java.io.*;
+// CODE BELOW
+
 public class ZigZag
 {
 public static int longestZigZag(int[] sequence) {
