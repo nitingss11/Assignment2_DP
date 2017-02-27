@@ -64,7 +64,8 @@ int lis(vector<int> v, int n, int l)
 }
 
 int main() {
-	int t;
+	
+	int t; //test cases
 	cin>>t;
 	while(t--)
 	{
@@ -93,5 +94,4 @@ int main() {
 	}
 	return 0;
 } 
-Comments 
-
+//Comments to be added
