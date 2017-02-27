@@ -1,8 +1,8 @@
 # Assignment2_DP
 
-Assignment 2 
+Assignment 2  Design and Analysis of Algorithm
 
-# Dynamic Programming. 
+## Dynamic Programming. 
 
 3 questions.  
 
