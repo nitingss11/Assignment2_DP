@@ -38,3 +38,26 @@ and a,b is one block away from c,d.
 -	The return value will be between 0 and 2^63-1 inclusive.
 
 *********/
+
+//CODE BELOW
+
+#include<stdio.h>
+#include<iostream>
+using namespace std;
+
+#define LEN 100
+
+int bad[LEN][4];
+int badn;
+long long roadnum[LEN][LEN];
+
+int reachable(int x1,int y1,int x2,int y2){
+    for(int i=0;i<badn;i++){
+        if( (x1==bad[i][0]&& y1==bad[i][1]&& x2==bad[i][2] && y2== bad[i][3]) ||
+           (x1==bad[i][2]&& y1==bad[i][3]&& x2==bad[i][0]&& y2==bad[i][1]) )
+            return 0;
+    }
+    return 1;
+}
+
+
