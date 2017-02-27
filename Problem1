@@ -24,6 +24,9 @@ Constraints
 
 *******/
 
+import java.io.*;
+public class ZigZag
+{
 public static int longestZigZag(int[] sequence) {
     int max_seq = 0;
 
@@ -34,5 +37,29 @@ public static int longestZigZag(int[] sequence) {
     if (sequence.length == 2) {
         return 2;
     }
-}
+    
+    int dp[] = new int[sequence.length];
+
+    dp[0] = 1;
+    dp[1] = 2;
+
+    for (int i = 2; i < sequence.length; i++) {
+        for (int j = i - 1; j > 0; j--) {
+            if (((sequence[i] > sequence[j] &&
+                sequence[j] < sequence[j - 1]) || 
+                (sequence[i] < sequence[j] &&
+                sequence[j] > sequence[j - 1])) &&
+                dp[i] < dp[j] + 1) {
+                dp[i] = dp[j] + 1;
+
+                if (dp[i] > max_seq) {
+                    max_seq = dp[i];
+                }
+            } 
+        }
+    }
+
+    return max_seq;
+ }
  
+}
