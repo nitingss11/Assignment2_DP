@@ -35,3 +35,11 @@ You may assume that each number number on the sheet of paper; ai is randomly gen
 any number from an interval [0,U], where U is some upper bound (1 ≤ U ≤ 106).
 
 ********/
+
+//CODE BELOW
+
+#include <iostream>
+#include<vector>
+using namespace std;
+int n, t, temp;
+vector <int> v;
